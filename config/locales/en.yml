@@ -77,3 +77,30 @@ en:
   time:
     formats:
       duration: "%M:%S"
+  users:
+    form:
+      error: " prohibited this user from being saved:"
+    edit:
+      title: "Editing User"
+      show: "Show"
+      back: "Back"
+    index:
+      title: "Users"
+      name: "Name"
+      email: "Email"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
+      confirm: "Are you sure?"
+      new_user: "New User"
+    new:
+      title: "New User"
+      back: "Back"
+    show:
+      create_successfully: "User was successfully created."
+      update_successfully: "User was successfully updated."
+      destroy_successfully: "User was successfully destroyed."
+      name: "Name:"
+      email: "Email:"
+      edit: "Edit"
+      back: "Back"

@@ -107,6 +107,9 @@ en:
       new:
         email: "Email"
         password: "Password"
+        log_in_with_google: "Log in with Google"
+        log_in_with_facebook: "Log in with Facebook"
+        log_in_with_twitter: "Log in with Twitter"
         log_in: "Log in"
     shared:
       links:

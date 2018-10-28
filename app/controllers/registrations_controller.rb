@@ -27,11 +27,12 @@ class RegistrationsController < Devise::RegistrationsController
 
   private
   def sign_up_params
-    params.require(:user).permit :name, :email, :password,
-      :password_confirmation, :remember_me
+    params.require(:user).permit :name, :email, :password, :password_confirmation, :remember_me
   end
 
   def set_flash_message! key, kind, options = {}
-    set_flash_message(key, kind, options) if is_flashing_format?
+    if is_flashing_format?
+      set_flash_message(key, kind, options)
+    end
   end
 end
