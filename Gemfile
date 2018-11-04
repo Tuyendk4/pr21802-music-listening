@@ -34,7 +34,7 @@ gem "toastr-rails"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 gem "webpacker", "~> 3.5", ">= 3.5.5"
-gem "pg", "~> 1.1.3"
+
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
@@ -57,6 +57,10 @@ group :test do
   gem "guard-rspec", "~> 4.7", ">= 4.7.3"
   gem "rb-fsevent", "~> 0.10.3", require: false
   gem "rb-inotify", "~> 0.9.10", require: false
+end
+
+group :production do
+  gem "pg", "~> 1.1.3"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

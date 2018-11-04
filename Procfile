@@ -1,2 +1,2 @@
-web: bundle exec puma -C config/puma.rb
-webpacker: ./bin/webpack-dev-server
+web: bundle exec rails server -p $PORT
+worker: bundle exec rake jobs:work
